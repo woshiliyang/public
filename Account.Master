@@ -1,0 +1,194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Account.master.cs" Inherits="Eshop.Account" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="cssstyle.css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+       <style>
+        .left_menu {
+             margin:auto;
+            width:1000px;
+        }
+        .left_content
+        {
+            margin:auto;
+            width:189px;
+            border:solid 1px ;
+            border-color:black;
+            float:left;
+        }
+        a.nav8:link, a.nav8:visited {
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 22px;
+    margin: 0 14px 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url(img/square-blue-add.gif) no-repeat left;
+    color: #676d77;
+}
+
+        </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main-container">
+            <div class="top_bar">
+                </div>
+            <div class="header">
+                <div class="logo">
+                    <img alt="" src="img/logo.jpg" style="width:171px; height:73px"/>
+                    </div>
+                <div class="search_text">
+                    <input type="text" class="search_input" name="search" value="请输入关键字"/>
+                    <input type="image" src="img/search.gif" class="search_bt"/>
+                </div>
+                <div class="header_class">
+                    <div class="header_img">
+                        <img alt="推荐商品" src="img/top_hot.gif"/>
+                        </div>
+                    <div class="header_img">
+                        <img alt="新品速递" src="img/top_news.gif"/>
+                        </div>
+                    <div class="header_img">
+                        <img alt="热销排行" src="img/top_commend.gif"/>
+                        </div>
+                    </div>
+                </div>
+            <div class="menu_bar">
+                <div class="left_menu_corner">
+                    </div>
+                <ul class="menu">
+                    <li><a href="index.aspx" class="nav1">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="productbrief.aspx" class="nav2">Products</a></li>
+                    <li class="divider"></li>
+                    <li><a href="special.aspx" class="nav3">Specials</a></li>
+                    <li class="divider"></li>
+                    <li><a href="myorder.aspx" class="nav4">My account</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.aspx" class="nav5">Sign Up</a></li>
+                    <li class="divider"></li>
+                    <li><a href="shooping.aspx" class="nav6">Shooping</a></li>
+                    <li class="divider"></li>
+                    
+                    <li><a href="collect.aspx" class="nav7">Contact Us</a></li>
+                    <li class="divider"></li>
+
+                    <li><a href="admin.aspx" class="nav8">Store</a></li>
+                    <li class="divider"></li>
+                    </ul>
+                <div class="right_menu_corner">
+                   </div>
+                </div>
+            <div class="crumb_navigation">
+                 
+                </div>
+
+            <div class="main_content">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            <div class="left_menu">
+            <div class="left_content">
+           <div class="left_content " style=" border:1px dotted green;">
+                <div class="title_box">
+                    <span style=" font-size:15px; color:Black;">我的常用链接</span>
+                </div>
+                <div class="title_box" style= "height:25px; background-color:#ffeeee;">
+                    <span style="font-size:15px; color:Black;">帐户管理</span>
+                </div>
+                <div class="border_box">
+                    <ul class="Manage_Menu " style=" font-size:12px; line-height:18px;" >
+                        <li><a href="profile.aspx" target="main">基本资料</a></li>
+                        <li><a href="myaddress.aspx" target="main">收货地址</a></li>
+                         <li><a href="myaddress.aspx" target="main">站内信息</a></li>
+                          <li><a href="myaddress.aspx" target="main">我的积分</a></li>
+                      
+                       
+                    </ul>
+                </div>
+                <div class="title_box">
+                    <span style=" font-size:15px; color:Black;">订单中心</span>
+                </div>
+                <div class="border_box">
+                    <ul class="Manage_Menu "  style=" font-size:12px; line-height:18px;">
+                        <li><a href="myallorder.aspx" target="_self">我的订单</a></li>
+                        <li> <a href="myallorder.aspx" target="_self">支付历史</a>            </li>
+                    </ul>
+                </div>
+
+                <div class="title_box">
+                    <span style=" font-size:15px; color:Black;">我的商品</span>
+                </div>
+
+                <div class="border_box">
+                    <ul class="Manage_Menu "   style=" font-size:12px; line-height:18px;">
+                        <li><a href="boughtlist.aspx" target="main">已购商品</a></li>
+                        <li><a href="custwishlist.aspx" target="main">我的收藏</a></li>
+                    </ul>
+                </div>
+
+                <div class="title_box">
+                    <span style=" font-size:15px; color:Black;">留言管理</span>
+                </div>
+
+                <div class="border_box">
+                    <ul class="Manage_Menu "  style=" font-size:12px; line-height:18px;">
+                        <li><a href="message.aspx" target="main">发表的留言</a></li>
+                        <li><a href="replymessage.aspx" target="main">回复的留言</a></li>
+                    </ul>
+                </div>
+
+            </div>
+         
+       </div>  
+                </div>
+            <div class="footer">
+                  
+                    <div class="left_footer">
+
+                    </div>
+                <div class="center_footer">
+                    </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                     </br>
+                    </br>
+                    
+                  Power by Microsoft Visual Studio   </br>  &nbsp;&nbsp;&nbsp;&nbsp;@Ly2018 
+                </div>
+              
+                <div class="right_footer">
+
+                    </div>
+                   
+                    
+                    </div>
+              
+               
+            </div>
+    </form>
+</body>
+</html>
